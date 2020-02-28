@@ -138,12 +138,14 @@ html {
 html,
 body {
   font-family: 'Comfortaa';
+  color: white;
 }
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a {
   font-family: 'Quicksand';
 }
 span {
@@ -166,6 +168,9 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+a {
+  font-size: 1.6rem;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -175,6 +180,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.main-nav h1 {
+  margin-right: 20rem;
+}
+.main-nav a {
+  text-decoration: none;
+  margin-left: 2rem;
+  color: white;
+}
+.main-nav a:hover {
+  background-color: #8cba80;
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+}
 body {
-  background: url('images/mari-plant.jpg');
+  background-image: url("../images/kush-in-glass.jpg");
+}
+.conatiner {
+  background-color: rgba(0, 0, 0, 0.79);
 }
