@@ -11,8 +11,7 @@ body{
   .flex(row,none,center);
 }
 .vision{
-  background-color: rgba(#554d63, .7);
-  color: white;
+  .section(white, rgba(#554d63, .7));
   border-radius: .5rem;
   margin: 2.5rem 0;
   text-align: center;
@@ -22,6 +21,9 @@ body{
 .using{
   margin: 2.5rem 0;
   text-align: center;
+  .section(black,rgba(#FFF, .7));
+  padding: 3rem;
+  border-radius: .5rem;
 }
 
 .item_list{
@@ -39,7 +41,7 @@ body{
 .sign_up{
   // margin-right: 2px;
   text-decoration: none;
-  .anchors(white,none);
+  .anchors(black,none);
     &:hover{
       .anchors(#8cba80,black);
     }
