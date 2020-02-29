@@ -1,29 +1,36 @@
 body{
-  background-image: url("../images/maryjane/kush-in-glass.jpg");
+  background-image: url("../images/maryjane/test1.jpg");
   background-attachment: fixed;
 }
 .container{
-  // background-color: rgba(0,0,0,.5);
   margin-top: 10rem;
 }
 
-.content-section{
-  .flex(row,none,center);
+#vision{
+
 }
-.vision{
-  .section(white, rgba(#554d63, .7));
+.text-vision{
+  .section(white, rgba(@color2, .7));
   border-radius: .5rem;
   margin: 2.5rem 0;
   text-align: center;
   font-size: 5rem;
+  .flex(row,none,center);
+  padding: 2rem;
 }
 
 .using{
   margin: 2.5rem 0;
   text-align: center;
-  .section(black,rgba(#FFF, .7));
+  .section(black,rgba(@color1,.7));
   padding: 3rem;
   border-radius: .5rem;
+    a{
+      color:black;
+        &:hover{
+          .anchors(rgba(@color2, .7), black);
+        }
+    }
 }
 
 .item_list{
@@ -38,11 +45,32 @@ body{
   }
 }
 
+#testimonials-section{
+    max-width: 1000px;
+    .testimonials{
+
+      .flex(column,center,center);
+          h2{
+            font-size: 5rem;
+          }
+        .testimonials-text{
+          .flex(row,none,none);
+            p{
+              font-size: 2rem;
+              margin-right: 10px;
+            }
+
+        }
+    }
+}
+
+
+
 .sign_up{
   // margin-right: 2px;
   text-decoration: none;
   .anchors(black,none);
     &:hover{
-      .anchors(#8cba80,black);
+      .anchors(@color1,black);
     }
   }
