@@ -1,20 +1,24 @@
 .main-nav{
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-    h1{
-      margin-right: 20rem;
-    }
-
+  @media (min-width:900px){
+    width: 100%;
+  	top: 0px;
+  	position: fixed;
+  	z-index: 0;
+    justify-content:space-between;
+  }
+  h1{
+    margin-left: .5rem;
+  }
+  // background-color: rgba(white,.7);
+  height: 80px;
+  // margin: 0 auto;
+  .flex(row,center,center);
     a{
+      // margin-right: 2px;
       text-decoration: none;
-      margin-left: 2rem;
-      color: white;
+      .anchors(white,none);
         &:hover{
-          background-color: #8cba80;
-          color: black;
-          padding: 10px;
-          border-radius: 3px;
+          .anchors(#8cba80,black);
         }
       }
 }

@@ -148,10 +148,6 @@ h5,
 a {
   font-family: 'Quicksand';
 }
-span {
-  font-family: 'Yellowtail';
-  font-size: 2.5rem;
-}
 h1 {
   font-size: 4rem;
 }
@@ -165,7 +161,7 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 3rem;
   padding-bottom: 10px;
 }
 a {
@@ -176,32 +172,79 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
 .main-nav {
+  height: 80px;
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .main-nav {
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
+    justify-content: space-between;
+  }
 }
 .main-nav h1 {
-  margin-right: 20rem;
+  margin-left: 0.5rem;
 }
 .main-nav a {
   text-decoration: none;
-  margin-left: 2rem;
+  display: inline-block;
+  background-color: none;
   color: white;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
 }
 .main-nav a:hover {
+  background-color: white;
+  color: none;
+}
+.main-nav a:hover {
+  display: inline-block;
+  background-color: black;
+  color: #8cba80;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+.main-nav a:hover:hover {
   background-color: #8cba80;
   color: black;
-  padding: 10px;
-  border-radius: 3px;
 }
 body {
   background-image: url("../images/maryjane/kush-in-glass.jpg");
+  background-attachment: fixed;
 }
-.conatiner {
-  background-color: rgba(0, 0, 0, 0.79);
+.container {
+  margin-top: 10rem;
+}
+.content-section {
+  display: flex;
+  flex-flow: row;
+  justify-content: none;
+  align-items: center;
+}
+.vision {
+  background-color: rgba(85, 77, 99, 0.7);
+  color: white;
+  border-radius: 0.5rem;
+  margin: 2.5rem 0;
+  text-align: center;
+  font-size: 5rem;
+}
+.using {
+  margin: 2.5rem 0;
+}
+.using li {
+  font-size: 2rem;
+  line-height: 3rem;
 }
