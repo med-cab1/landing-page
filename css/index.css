@@ -195,7 +195,7 @@ img {
 .main-nav h1 {
   margin-left: 0.5rem;
 }
-.main-nav a {
+.main-nav .sign_up {
   text-decoration: none;
   display: inline-block;
   background-color: none;
@@ -204,11 +204,11 @@ img {
   font-size: 2.5rem;
   border-radius: 5px;
 }
-.main-nav a:hover {
+.main-nav .sign_up:hover {
   background-color: white;
   color: none;
 }
-.main-nav a:hover {
+.main-nav .sign_up:hover {
   display: inline-block;
   background-color: black;
   color: #8cba80;
@@ -216,7 +216,7 @@ img {
   font-size: 2.5rem;
   border-radius: 5px;
 }
-.main-nav a:hover:hover {
+.main-nav .sign_up:hover:hover {
   background-color: #8cba80;
   color: black;
 }
@@ -243,8 +243,41 @@ body {
 }
 .using {
   margin: 2.5rem 0;
+  text-align: center;
 }
-.using li {
-  font-size: 2rem;
-  line-height: 3rem;
+.item_list {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: none;
+  align-items: center;
+}
+.item_list p {
+  margin-left: 1.5rem;
+  font-size: 2.5rem;
+}
+.sign_up {
+  text-decoration: none;
+  display: inline-block;
+  background-color: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+.sign_up:hover {
+  background-color: white;
+  color: none;
+}
+.sign_up:hover {
+  display: inline-block;
+  background-color: black;
+  color: #8cba80;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+.sign_up:hover:hover {
+  background-color: #8cba80;
+  color: black;
 }

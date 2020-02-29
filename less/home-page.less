@@ -21,8 +21,26 @@ body{
 
 .using{
   margin: 2.5rem 0;
-  li{
-    font-size: 2rem;
-    line-height: 3rem;
+  text-align: center;
+}
+
+.item_list{
+  margin-bottom: 4rem;
+  .flex(row,none,center);
+    p{
+      margin-left: 1.5rem;
+      font-size: 2.5rem;
+        span{
+          // font-weight: bold;
+        }
   }
 }
+
+.sign_up{
+  // margin-right: 2px;
+  text-decoration: none;
+  .anchors(white,none);
+    &:hover{
+      .anchors(#8cba80,black);
+    }
+  }
