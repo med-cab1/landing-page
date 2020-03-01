@@ -442,3 +442,14 @@ body {
     color: white;
   }
 }
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.footer p {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
