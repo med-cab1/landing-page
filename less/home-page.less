@@ -1,6 +1,11 @@
 body{
-  background-image: url("../images/maryjane/test1.jpg");
+  background-image: url("../images/maryjane/desktop.jpg");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  @media @tablet{
+    background-image: url("../images/maryjane/tablet.jpg");
+    background-repeat: no-repeat;
+  }
 }
 .container{
   margin-top: 10rem;
@@ -28,7 +33,7 @@ body{
     a{
       color:black;
         &:hover{
-          .anchors(rgba(@color2, .7), black);
+          .anchors(white, @color2);
         }
     }
 }
@@ -46,31 +51,52 @@ body{
 }
 
 #testimonials-section{
-    max-width: 1000px;
     .testimonials{
-
+      .flex(column,center,center);
+      .section(black,rgba(@color2,.7));
+      text-align: center;
+      padding: 3rem;
+      border-radius: .5rem;
+      margin: 2.5rem 0;
+        a{
+          color:black;
+            &:hover{
+              .anchors(white, @color1);
+            }
+        }
+    }
       .flex(column,center,center);
           h2{
             font-size: 5rem;
           }
         .testimonials-text{
           .flex(row,none,none);
+          @media @tablet{
+            .flex(column,none,none);
+          }
             p{
+              .section(black,rgba(255,255,255, .5));
+              border-radius: .5rem;
+              padding: 1rem;
               font-size: 2rem;
-              margin-right: 10px;
+              margin-right: 2.5rem;
+              @media @tablet{
+                margin: 2rem 0;
+              }
+            }
+          }
+            .sign-up{
+              margin-top: 2rem;
+              text-align: center;
             }
 
         }
-    }
-}
-
-
 
 .sign_up{
   // margin-right: 2px;
   text-decoration: none;
   .anchors(black,none);
     &:hover{
-      .anchors(@color1,black);
+      .anchors(black,@color1);
     }
   }
