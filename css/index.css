@@ -231,10 +231,15 @@ body {
   body {
     background-image: url("../images/maryjane/tablet.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 .container {
   margin-top: 10rem;
+}
+#vision img {
+  width: 150px;
+  height: 150px;
 }
 .text-vision {
   color: white;
@@ -282,6 +287,10 @@ body {
 .item_list p {
   margin-left: 1.5rem;
   font-size: 2.5rem;
+}
+.item_list img {
+  max-width: 50px;
+  max-height: 50px;
 }
 #testimonials-section {
   display: flex;

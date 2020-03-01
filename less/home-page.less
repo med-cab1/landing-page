@@ -5,6 +5,7 @@ body{
   @media @tablet{
     background-image: url("../images/maryjane/tablet.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 .container{
@@ -12,7 +13,10 @@ body{
 }
 
 #vision{
-
+  img{
+    width: 150px;
+    height: 150px;
+  }
 }
 .text-vision{
   .section(white, rgba(@color2, .7));
@@ -46,8 +50,12 @@ body{
       font-size: 2.5rem;
         span{
           // font-weight: bold;
-        }
-  }
+          }
+    }
+    img{
+      max-width: 50px;
+      max-height: 50px;
+    }
 }
 
 #testimonials-section{
