@@ -223,22 +223,17 @@ img {
   color: black;
 }
 body {
-  background-image: url("../images/maryjane/desktop.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: url("../images/maryjane/desktop.jpg") no-repeat fixed bottom;
 }
-@media (max-width:800px) {
+@media (max-width: 980px) {
   body {
     background-image: url("../images/maryjane/tablet.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 }
 .container {
   margin-top: 10rem;
 }
 #vision img {
-  width: 150px;
   height: 150px;
 }
 .text-vision {
@@ -277,6 +272,20 @@ body {
   background-color: #554d63;
   color: white;
 }
+@media (max-width: 980px) {
+  .using a {
+    display: inline-block;
+    background-color: #554d63;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    border-radius: 5px;
+  }
+  .using a:hover {
+    background-color: #554d63;
+    color: white;
+  }
+}
 .item_list {
   margin-bottom: 4rem;
   display: flex;
@@ -313,6 +322,20 @@ body {
 #testimonials-section .testimonials a {
   color: black;
 }
+@media (max-width: 980px) {
+  #testimonials-section .testimonials a {
+    display: inline-block;
+    background-color: #8cba80;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    border-radius: 5px;
+  }
+  #testimonials-section .testimonials a:hover {
+    background-color: #8cba80;
+    color: white;
+  }
+}
 #testimonials-section .testimonials a:hover {
   display: inline-block;
   background-color: #8cba80;
@@ -334,7 +357,7 @@ body {
   justify-content: none;
   align-items: none;
 }
-@media (max-width:800px) {
+@media (max-width: 980px) {
   #testimonials-section .testimonials-text {
     display: flex;
     flex-flow: column;
@@ -350,9 +373,9 @@ body {
   font-size: 2rem;
   margin-right: 2.5rem;
 }
-@media (max-width:800px) {
+@media (max-width: 980px) {
   #testimonials-section .testimonials-text p {
-    margin: 2rem 0;
+    margin: 2.5rem 0;
   }
 }
 #testimonials-section .sign-up {

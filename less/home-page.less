@@ -1,20 +1,21 @@
 body{
-  background-image: url("../images/maryjane/desktop.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  @media @tablet{
+  // background-image: url("../images/maryjane/desktop.jpg");
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // background-position: bottom;
+  background: url("../images/maryjane/desktop.jpg") no-repeat fixed bottom;
+  @media @body{
     background-image: url("../images/maryjane/tablet.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 }
 .container{
   margin-top: 10rem;
+
 }
 
 #vision{
   img{
-    width: 150px;
     height: 150px;
   }
 }
@@ -39,6 +40,9 @@ body{
         &:hover{
           .anchors(white, @color2);
         }
+      @media @body{
+        .anchors(white,@color2);
+      }
     }
 }
 
@@ -68,18 +72,21 @@ body{
       margin: 2.5rem 0;
         a{
           color:black;
+          @media @body{
+            .anchors(white, @color1);
+          }
             &:hover{
               .anchors(white, @color1);
             }
         }
-    }
+    }//testimonials
       .flex(column,center,center);
           h2{
             font-size: 5rem;
           }
         .testimonials-text{
           .flex(row,none,none);
-          @media @tablet{
+          @media @body{
             .flex(column,none,none);
           }
             p{
@@ -88,17 +95,17 @@ body{
               padding: 1rem;
               font-size: 2rem;
               margin-right: 2.5rem;
-              @media @tablet{
-                margin: 2rem 0;
+              @media @body{
+                margin: 2.5rem 0;
               }
             }
-          }
+          } //testimonials-text
             .sign-up{
               margin-top: 2rem;
               text-align: center;
             }
 
-        }
+        } //testimonals-section
 
 .sign_up{
   // margin-right: 2px;
