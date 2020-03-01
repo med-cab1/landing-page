@@ -11,11 +11,10 @@
     justify-content:space-between;
     @media @body {
       justify-content: center;
-      }
+      margin: 0 auto;
+    }
     @media @mobile{
       justify-content: center;
-      width:60px;
-      height:60px;
     }
   }
   h1{
@@ -27,14 +26,16 @@
   // margin: 0 auto;
   .flex(row,center,center);
     .anchor{
+
       // margin-right: 2px;
       text-decoration: none;
-      @media @mobile{
-        font-size: 1rem;
-      }
-      .anchors(black,none);
-        &:hover{
-          .anchors(black,@color1);
+      .anchors(black,0,2.5rem);
+        @media @mobile{
+          .anchors(black,0,3rem);
         }
+        &:hover{
+          .anchors(black,@color1,2.5rem);
+        }
+
       }
 }

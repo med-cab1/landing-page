@@ -201,13 +201,12 @@ img {
 @media (min-width: 900px) and (max-width: 980px) {
   .main-nav {
     justify-content: center;
+    margin: 0 auto;
   }
 }
 @media (min-width: 900px) and (max-width:500px) {
   .main-nav {
     justify-content: center;
-    width: 60px;
-    height: 60px;
   }
 }
 .main-nav h1 {
@@ -216,20 +215,29 @@ img {
 .main-nav .anchor {
   text-decoration: none;
   display: inline-block;
-  background-color: none;
+  background-color: 0;
   color: black;
   padding: 0.5rem 1rem;
   font-size: 2.5rem;
   border-radius: 5px;
 }
+.main-nav .anchor:hover {
+  background-color: 0;
+  color: black;
+}
 @media (max-width:500px) {
   .main-nav .anchor {
-    font-size: 1rem;
+    display: inline-block;
+    background-color: 0;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 3rem;
+    border-radius: 5px;
   }
-}
-.main-nav .anchor:hover {
-  background-color: none;
-  color: black;
+  .main-nav .anchor:hover {
+    background-color: 0;
+    color: black;
+  }
 }
 .main-nav .anchor:hover {
   display: inline-block;
@@ -244,15 +252,21 @@ img {
   color: black;
 }
 body {
-  background: url("../images/maryjane/desktop.jpg") no-repeat fixed bottom;
+  background: url("../images/maryjane/desktop.png") fixed no-repeat left bottom;
 }
 @media (max-width: 980px) {
   body {
-    background-image: url("../images/maryjane/tablet.jpg");
+    margin: 0 auto;
+    background: url("../images/maryjane/tabletview.png") fixed no-repeat left bottom;
   }
 }
 .container {
   margin-top: 10rem;
+}
+@media (max-width: 980px) {
+  .container {
+    max-width: 800px;
+  }
 }
 #vision img {
   height: 150px;
@@ -278,41 +292,20 @@ body {
   padding: 3rem;
   border-radius: 0.5rem;
 }
-.using a {
-  color: black;
-}
-.using a:hover {
-  display: inline-block;
-  background-color: #554d63;
-  color: white;
-  padding: 0.5rem 1rem;
-  font-size: 2.5rem;
-  border-radius: 5px;
-}
-.using a:hover:hover {
-  background-color: #554d63;
-  color: white;
-}
-@media (max-width: 980px) {
-  .using a {
-    display: inline-block;
-    background-color: #554d63;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-size: 2.5rem;
-    border-radius: 5px;
-  }
-  .using a:hover {
-    background-color: #554d63;
-    color: white;
-  }
-}
 .item_list {
   margin-bottom: 4rem;
   display: flex;
   flex-flow: row;
   justify-content: none;
   align-items: center;
+}
+@media (max-width: 980px) {
+  .item_list {
+    display: flex;
+    flex-flow: row;
+    justify-content: none;
+    align-items: center;
+  }
 }
 .item_list p {
   margin-left: 1.5rem;
@@ -321,6 +314,12 @@ body {
 .item_list img {
   max-width: 50px;
   max-height: 50px;
+}
+@media (max-width: 980px) {
+  .item_list img {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }
 #testimonials-section {
   display: flex;
@@ -397,6 +396,7 @@ body {
 @media (max-width: 980px) {
   #testimonials-section .testimonials-text p {
     margin: 2.5rem 0;
+    font-size: 3rem;
   }
 }
 #testimonials-section .sign-up {
@@ -418,13 +418,27 @@ body {
 }
 .sign_up:hover {
   display: inline-block;
-  background-color: #8cba80;
-  color: black;
+  background-color: #554d63;
+  color: white;
   padding: 0.5rem 1rem;
   font-size: 2.5rem;
   border-radius: 5px;
 }
 .sign_up:hover:hover {
-  background-color: #8cba80;
-  color: black;
+  background-color: #554d63;
+  color: white;
+}
+@media (max-width: 980px) {
+  .sign_up {
+    display: inline-block;
+    background-color: #554d63;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    border-radius: 5px;
+  }
+  .sign_up:hover {
+    background-color: #554d63;
+    color: white;
+  }
 }

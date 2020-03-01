@@ -4,12 +4,12 @@
   justify-content: @justify;
   align-items: @align;
 }
-.anchors(@color,@background){
+.anchors(@color,@background,@fontsize){
   display: inline-block;
   background-color: @background;
   color: @color;
   padding:.5rem 1rem;
-  font-size: 2.5rem;
+  font-size: @fontsize;
   border-radius: 5px;
     &:hover{
       background-color: @background;

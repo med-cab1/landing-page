@@ -4,13 +4,17 @@ body{
   // background-repeat: no-repeat;
   // background-size: auto;
   // background-position: bottom;
-  background: url("../images/maryjane/desktop.jpg") no-repeat fixed bottom;
+  background: url("../images/maryjane/desktop.png") fixed no-repeat left bottom;
   @media @body{
-    background-image: url("../images/maryjane/tablet.jpg");
+    margin: 0 auto;
+    background: url("../images/maryjane/tabletview.png") fixed no-repeat left bottom;
   }
 }
 .container{
   margin-top: 10rem;
+    @media @body{
+      max-width:800px;
+    }
 
 }
 
@@ -35,21 +39,15 @@ body{
   .section(black,rgba(@color1,.7));
   padding: 3rem;
   border-radius: .5rem;
-    a{
-      color:black;
-        &:hover{
-          .anchors(white, @color2);
-        }
-      @media @body{
-        .anchors(white,@color2);
-      }
-    }
 }
 
 .item_list{
   margin-bottom: 4rem;
   .flex(row,none,center);
-    p{
+  @media @body{
+    .flex(row,none,center);
+  }
+      p{
       margin-left: 1.5rem;
       font-size: 2.5rem;
         span{
@@ -59,6 +57,10 @@ body{
     img{
       max-width: 50px;
       max-height: 50px;
+      @media @body{
+        max-width: 100px;
+        max-height: 100px;
+      }
     }
 }
 
@@ -73,10 +75,10 @@ body{
         a{
           color:black;
           @media @body{
-            .anchors(white, @color1);
+            .anchors(white, @color1,2.5rem);
           }
             &:hover{
-              .anchors(white, @color1);
+              .anchors(white, @color1,2.5rem);
             }
         }
     }//testimonials
@@ -97,6 +99,7 @@ body{
               margin-right: 2.5rem;
               @media @body{
                 margin: 2.5rem 0;
+                font-size: 3rem;
               }
             }
           } //testimonials-text
@@ -110,8 +113,11 @@ body{
 .sign_up{
   // margin-right: 2px;
   text-decoration: none;
-  .anchors(black,none);
+  .anchors(black,none,2.5rem);
     &:hover{
-      .anchors(black,@color1);
+      .anchors(white, @color2,2.5rem);
     }
+  @media @body{
+    .anchors(white,@color2,2.5rem);
+  }
   }
