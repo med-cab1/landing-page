@@ -1,10 +1,22 @@
 .main-nav{
   @media (min-width:900px){
+    img{
+      width: 60px;
+      height: 60px;
+    }
     width: 100%;
   	top: 0px;
   	position: fixed;
   	z-index: 0;
     justify-content:space-between;
+    @media @body {
+      justify-content: center;
+      }
+    @media @mobile{
+      justify-content: center;
+      width:60px;
+      height:60px;
+    }
   }
   h1{
     margin-left: .5rem;
@@ -17,6 +29,9 @@
     .anchor{
       // margin-right: 2px;
       text-decoration: none;
+      @media @mobile{
+        font-size: 1rem;
+      }
       .anchors(black,none);
         &:hover{
           .anchors(black,@color1);

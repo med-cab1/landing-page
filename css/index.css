@@ -193,6 +193,22 @@ img {
     z-index: 0;
     justify-content: space-between;
   }
+  .main-nav img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (min-width: 900px) and (max-width: 980px) {
+  .main-nav {
+    justify-content: center;
+  }
+}
+@media (min-width: 900px) and (max-width:500px) {
+  .main-nav {
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
 }
 .main-nav h1 {
   margin-left: 0.5rem;
@@ -205,6 +221,11 @@ img {
   padding: 0.5rem 1rem;
   font-size: 2.5rem;
   border-radius: 5px;
+}
+@media (max-width:500px) {
+  .main-nav .anchor {
+    font-size: 1rem;
+  }
 }
 .main-nav .anchor:hover {
   background-color: none;
