@@ -5,14 +5,17 @@ body{
   // background-size: auto;
   // background-position: bottom;
   background: url("../images/maryjane/desktop.png") fixed no-repeat left bottom;
-  @media @body{
+  @media @tablet{
     margin: 0 auto;
     background: url("../images/maryjane/tabletview.png") fixed no-repeat left bottom;
+  }
+  @media @mobile{
+    background: url("");
   }
 }
 .container{
   margin-top: 10rem;
-    @media @body{
+    @media @tablet{
       max-width:800px;
     }
 
@@ -20,7 +23,7 @@ body{
 
 #vision{
   img{
-    height: 150px;
+    height: 50%;
   }
 }
 .text-vision{
@@ -28,10 +31,15 @@ body{
   border-radius: .5rem;
   margin: 2.5rem 0;
   text-align: center;
-  font-size: 5rem;
   .flex(row,none,center);
   padding: 2rem;
-}
+    p{
+      font-size: 3rem;
+      @media @mobile{
+        font-size:1.5rem;
+      }
+    }
+  }
 
 .using{
   margin: 2.5rem 0;
@@ -44,14 +52,17 @@ body{
 .item_list{
   margin-bottom: 4rem;
   .flex(row,none,center);
-  @media @body{
+  @media @tablet{
     .flex(row,none,center);
   }
       p{
       margin-left: 1.5rem;
       font-size: 2.5rem;
-      @media @body{
+      @media @tablet{
         font-size: 3rem;
+      }
+      @media @mobile{
+        font-size: 1.5rem;
       }
         span{
           // font-weight: bold;
@@ -60,7 +71,7 @@ body{
     img{
       max-width: 50px;
       max-height: 50px;
-      @media @body{
+      @media @tablet{
         max-width: 100px;
         max-height: 100px;
       }
@@ -77,45 +88,57 @@ body{
       margin: 2.5rem 0;
         a{
           color:black;
-          @media @body{
-            .anchors(white, @color1,4rem);
+          @media @tablet{
+            .anchors(white, @color1,2.5rem);
           }
             &:hover{
               .anchors(white, @color1,2.5rem);
             }
+          @media @mobile{
+            .anchors(white,@color1,2rem);
           }
+        }
     }//testimonials
       .flex(column,center,center);
           h2{
             font-size: 5rem;
+            @media @mobile{
+              font-size: 3.5rem;
+            }
           }
         .testimonials-text{
           div{
-          @media @body{
+          @media @tablet{
             margin-bottom: 3.5rem;
           }
         }
           .flex(row,none,none);
           .img-circle{
             border-radius: 50%;
-            @media @body{
+            @media @tablet{
               height:50%;
             }
+            @media @mobile{
+              display:none;
+            }
           }
-          @media @body{
+          @media @tablet{
             .flex(column,none,none);
           }
             p{
               .section(black,rgba(255,255,255, .5));
               border-radius: .5rem;
               padding: 1rem;
-              font-size: 2rem;
+              font-size: 1.8rem;
               margin: 2.5rem 2.5rem;
-              @media @body{
+              @media @tablet{
                 margin: 2.5rem 0;
-                font-size: 3rem;
+                font-size: 2rem;
               }
-            }
+              @media @mobile{
+                font-size: 2rem;
+              }
+            }//p
           } //testimonials-text
             .sign-up{
               margin-top: 2rem;
@@ -127,12 +150,15 @@ body{
 .sign_up{
   // margin-right: 2px;
   text-decoration: none;
-  .anchors(black,none,2.5rem);
+  .anchors(black,none,3rem);
     &:hover{
-      .anchors(white, @color2,2.5rem);
+      .anchors(white, @color2,3rem);
     }
-  @media @body{
-    .anchors(white,@color2,4em);
+  @media @tablet{
+    .anchors(white,@color2,2.5rem);
+  }
+  @media @mobile{
+    .anchors(white,@color2,2rem);
   }
 }
 
