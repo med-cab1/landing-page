@@ -50,6 +50,9 @@ body{
       p{
       margin-left: 1.5rem;
       font-size: 2.5rem;
+      @media @body{
+        font-size: 3rem;
+      }
         span{
           // font-weight: bold;
           }
@@ -75,19 +78,30 @@ body{
         a{
           color:black;
           @media @body{
-            .anchors(white, @color1,2.5rem);
+            .anchors(white, @color1,4rem);
           }
             &:hover{
               .anchors(white, @color1,2.5rem);
             }
-        }
+          }
     }//testimonials
       .flex(column,center,center);
           h2{
             font-size: 5rem;
           }
         .testimonials-text{
+          div{
+          @media @body{
+            margin-bottom: 3.5rem;
+          }
+        }
           .flex(row,none,none);
+          .img-circle{
+            border-radius: 50%;
+            @media @body{
+              height:50%;
+            }
+          }
           @media @body{
             .flex(column,none,none);
           }
@@ -96,7 +110,7 @@ body{
               border-radius: .5rem;
               padding: 1rem;
               font-size: 2rem;
-              margin-right: 2.5rem;
+              margin: 2.5rem 2.5rem;
               @media @body{
                 margin: 2.5rem 0;
                 font-size: 3rem;
@@ -118,7 +132,7 @@ body{
       .anchors(white, @color2,2.5rem);
     }
   @media @body{
-    .anchors(white,@color2,2.5rem);
+    .anchors(white,@color2,4em);
   }
 }
 
