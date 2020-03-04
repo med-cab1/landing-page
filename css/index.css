@@ -263,14 +263,14 @@ img {
   background-color: #8cba80;
   color: black;
 }
-.footer {
+footer {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
   color: black;
 }
-.footer p {
+footer p {
   margin-right: 1rem;
   font-size: 1rem;
 }
