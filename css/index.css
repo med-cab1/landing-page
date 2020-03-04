@@ -186,13 +186,14 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  background-color: rgba(128, 128, 128, 0.7);
+  background-color: rgba(170, 170, 170, 0.75);
   color: black;
   height: 80px;
 }
 .main-nav img {
-  width: 60px;
-  height: 60px;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 1rem;
 }
 @media screen and (max-width:800px) {
   .main-nav {
