@@ -215,6 +215,18 @@ img {
   background-color: none;
   color: black;
 }
+.main-nav .anchor:hover {
+  display: inline-block;
+  background-color: #8cba80;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+.main-nav .anchor:hover:hover {
+  background-color: #8cba80;
+  color: black;
+}
 @media screen and (max-width:800px) {
   .main-nav .anchor {
     display: inline-block;
@@ -244,18 +256,6 @@ img {
     background-color: none;
     color: black;
   }
-}
-.main-nav .anchor:hover {
-  display: inline-block;
-  background-color: #8cba80;
-  color: black;
-  padding: 0.5rem 1rem;
-  font-size: 2.5rem;
-  border-radius: 5px;
-}
-.main-nav .anchor:hover:hover {
-  background-color: #8cba80;
-  color: black;
 }
 .footer {
   display: flex;
@@ -381,6 +381,18 @@ body {
 #testimonials-section .testimonials a {
   color: black;
 }
+#testimonials-section .testimonials a:hover {
+  display: inline-block;
+  background-color: #8cba80;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+#testimonials-section .testimonials a:hover:hover {
+  background-color: #8cba80;
+  color: white;
+}
 @media screen and (max-width:800px) {
   #testimonials-section .testimonials a {
     display: inline-block;
@@ -394,18 +406,6 @@ body {
     background-color: #8cba80;
     color: white;
   }
-}
-#testimonials-section .testimonials a:hover {
-  display: inline-block;
-  background-color: #8cba80;
-  color: white;
-  padding: 0.5rem 1rem;
-  font-size: 2.5rem;
-  border-radius: 5px;
-}
-#testimonials-section .testimonials a:hover:hover {
-  background-color: #8cba80;
-  color: white;
 }
 @media (max-width:500px) {
   #testimonials-section .testimonials a {

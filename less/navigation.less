@@ -22,6 +22,9 @@
     .anchor{
       text-decoration: none;
       .anchors(black,none,2.5rem);
+        &:hover{
+          .anchors(black,@color1,2.5rem);
+      }
         @media screen and @tablet{
           .anchors(black,none,2.5rem);
           padding: 0;
@@ -30,8 +33,6 @@
         @media screen and @mobile{
           .anchors(black,none,1.5rem)
         }
-          &:hover{
-          .anchors(black,@color1,2.5rem);
-        }
+
       }
     }

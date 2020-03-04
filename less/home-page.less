@@ -24,6 +24,9 @@ body{
 #vision{
   img{
     height: 20rem;
+    @media screen and @tablet{
+
+    }
   }
 }
 .text-vision{
@@ -88,12 +91,12 @@ body{
       margin: 2.5rem 0;
         a{
           color:black;
+          &:hover{
+            .anchors(white, @color1,2.5rem);
+          }
           @media screen and @tablet{
             .anchors(white, @color1,2.5rem);
           }
-            &:hover{
-              .anchors(white, @color1,2.5rem);
-            }
           @media @mobile{
             .anchors(white,@color1,2rem);
           }
