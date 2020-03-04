@@ -293,6 +293,11 @@ body {
 #vision img {
   height: 20rem;
 }
+@media screen and (max-width:500px) {
+  #vision img {
+    height: 10rem;
+  }
+}
 .text-vision {
   color: white;
   background-color: rgba(85, 77, 99, 0.7);
