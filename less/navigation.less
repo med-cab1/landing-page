@@ -9,7 +9,7 @@
   	z-index: 0;
     .flex(row,space-between,center);
     margin: 0 auto;
-    @media @tablet{
+    @media screen and @tablet{
       justify-content: center;
     }
   h1{
@@ -22,12 +22,12 @@
     .anchor{
       text-decoration: none;
       .anchors(black,none,2.5rem);
-        @media @tablet{
+        @media screen and @tablet{
           .anchors(black,none,2.5rem);
           padding: 0;
           margin: 0 1rem;
         }
-        @media @mobile{
+        @media screen and @mobile{
           .anchors(black,none,1.5rem)
         }
           &:hover{

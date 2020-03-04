@@ -5,17 +5,17 @@ body{
   // background-size: auto;
   // background-position: bottom;
   background: url("../images/maryjane/desktop.png") fixed no-repeat left bottom;
-  @media @tablet{
+  @media screen and @tablet{
     margin: 0 auto;
     background: url("../images/maryjane/tabletview.png") fixed no-repeat left bottom;
   }
-  @media @mobile{
+  @media screen and @mobile{
     background: url("");
   }
 }
 .container{
   margin-top: 10rem;
-    @media @tablet{
+    @media screen and @tablet{
       max-width:800px;
     }
 
@@ -35,7 +35,7 @@ body{
   padding: 2rem;
     p{
       font-size: 3rem;
-      @media @mobile{
+      @media screen and @mobile{
         font-size:1.5rem;
       }
     }
@@ -52,16 +52,16 @@ body{
 .item_list{
   margin-bottom: 4rem;
   .flex(row,none,center);
-  @media @tablet{
+  @media screen and @tablet{
     .flex(row,none,center);
   }
       p{
       margin-left: 1.5rem;
       font-size: 2.5rem;
-      @media @tablet{
+      @media screen and @tablet{
         font-size: 3rem;
       }
-      @media @mobile{
+      @media screen and  @mobile{
         font-size: 1.5rem;
       }
         span{
@@ -71,7 +71,7 @@ body{
     img{
       max-width: 50px;
       max-height: 50px;
-      @media @tablet{
+      @media screen and  @tablet{
         max-width: 100px;
         max-height: 100px;
       }
@@ -88,7 +88,7 @@ body{
       margin: 2.5rem 0;
         a{
           color:black;
-          @media @tablet{
+          @media screen and @tablet{
             .anchors(white, @color1,2.5rem);
           }
             &:hover{
@@ -102,29 +102,29 @@ body{
       .flex(column,center,center);
           h2{
             font-size: 5rem;
-            @media @mobile{
+            @media screen and @mobile{
               font-size: 3.5rem;
             }
           }
         .testimonials-text{
           div{
-          @media @tablet{
+          @media screen and @tablet{
             margin-bottom: 3.5rem;
           }
         }
           .flex(row,none,none);
           .img-circle{
             border-radius: 50%;
-            @media @tablet{
+            @media screen and @tablet{
               height:50%;
               -webkit-height: 50%;
 
             }
-            @media @mobile{
+            @media screen and @mobile{
               display:none;
             }
           }
-          @media @tablet{
+          @media screen and @tablet{
             .flex(column,none,none);
           }
             p{
@@ -133,11 +133,11 @@ body{
               padding: 1rem;
               font-size: 1.8rem;
               margin: 2.5rem 2.5rem;
-              @media @tablet{
+              @media screen and @tablet{
                 margin: 2.5rem 0;
                 font-size: 2rem;
               }
-              @media @mobile{
+              @media screen and @mobile{
                 font-size: 2rem;
               }
             }//p
@@ -156,19 +156,10 @@ body{
     &:hover{
       .anchors(white, @color2,3rem);
     }
-  @media @tablet{
+  @media screen and @tablet{
     .anchors(white,@color2,2.5rem);
   }
-  @media @mobile{
+  @media screen and @mobile{
     .anchors(white,@color2,2rem);
-  }
-}
-
-.footer{
-  .flex(row,center,center);
-  color:black;
-  p{
-    margin-right: 1rem;
-    font-size: 1rem;
   }
 }

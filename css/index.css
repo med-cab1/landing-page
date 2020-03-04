@@ -194,7 +194,7 @@ img {
   width: 60px;
   height: 60px;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   .main-nav {
     justify-content: center;
   }
@@ -215,7 +215,7 @@ img {
   background-color: none;
   color: black;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   .main-nav .anchor {
     display: inline-block;
     background-color: none;
@@ -231,7 +231,7 @@ img {
     color: black;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .main-nav .anchor {
     display: inline-block;
     background-color: none;
@@ -257,16 +257,27 @@ img {
   background-color: #8cba80;
   color: black;
 }
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.footer p {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
 body {
   background: url("../images/maryjane/desktop.png") fixed no-repeat left bottom;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   body {
     margin: 0 auto;
     background: url("../images/maryjane/tabletview.png") fixed no-repeat left bottom;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   body {
     background: url("");
   }
@@ -274,7 +285,7 @@ body {
 .container {
   margin-top: 10rem;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   .container {
     max-width: 800px;
   }
@@ -297,7 +308,7 @@ body {
 .text-vision p {
   font-size: 3rem;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .text-vision p {
     font-size: 1.5rem;
   }
@@ -317,7 +328,7 @@ body {
   justify-content: none;
   align-items: center;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   .item_list {
     display: flex;
     flex-flow: row;
@@ -329,12 +340,12 @@ body {
   margin-left: 1.5rem;
   font-size: 2.5rem;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   .item_list p {
     font-size: 3rem;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .item_list p {
     font-size: 1.5rem;
   }
@@ -343,7 +354,7 @@ body {
   max-width: 50px;
   max-height: 50px;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   .item_list img {
     max-width: 100px;
     max-height: 100px;
@@ -370,7 +381,7 @@ body {
 #testimonials-section .testimonials a {
   color: black;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   #testimonials-section .testimonials a {
     display: inline-block;
     background-color: #8cba80;
@@ -413,7 +424,7 @@ body {
 #testimonials-section h2 {
   font-size: 5rem;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   #testimonials-section h2 {
     font-size: 3.5rem;
   }
@@ -424,7 +435,7 @@ body {
   justify-content: none;
   align-items: none;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   #testimonials-section .testimonials-text div {
     margin-bottom: 3.5rem;
   }
@@ -432,18 +443,18 @@ body {
 #testimonials-section .testimonials-text .img-circle {
   border-radius: 50%;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   #testimonials-section .testimonials-text .img-circle {
     height: 50%;
     -webkit-height: 50%;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   #testimonials-section .testimonials-text .img-circle {
     display: none;
   }
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   #testimonials-section .testimonials-text {
     display: flex;
     flex-flow: column;
@@ -459,13 +470,13 @@ body {
   font-size: 1.8rem;
   margin: 2.5rem 2.5rem;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   #testimonials-section .testimonials-text p {
     margin: 2.5rem 0;
     font-size: 2rem;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   #testimonials-section .testimonials-text p {
     font-size: 2rem;
   }
@@ -499,7 +510,7 @@ body {
   background-color: #554d63;
   color: white;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
   .sign_up {
     display: inline-block;
     background-color: #554d63;
@@ -513,7 +524,7 @@ body {
     color: white;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .sign_up {
     display: inline-block;
     background-color: #554d63;
@@ -526,15 +537,4 @@ body {
     background-color: #554d63;
     color: white;
   }
-}
-.footer {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  color: black;
-}
-.footer p {
-  margin-right: 1rem;
-  font-size: 1rem;
 }
