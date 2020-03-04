@@ -34,7 +34,7 @@ body{
   border-radius: .5rem;
   margin: 2.5rem 0;
   text-align: center;
-  .flex(row,none,center);
+  .flex(row,none,center,none);
   padding: 2rem;
     p{
       font-size: 3rem;
@@ -54,9 +54,9 @@ body{
 
 .item_list{
   margin-bottom: 4rem;
-  .flex(row,none,center);
+  .flex(row,none,center,none);
   @media screen and @tablet{
-    .flex(row,none,center);
+    .flex(row,none,center,none);
   }
       p{
       margin-left: 1.5rem;
@@ -83,7 +83,7 @@ body{
 
 #testimonials-section{
     .testimonials{
-      .flex(column,center,center);
+      .flex(column,center,center,none);
       .section(black,rgba(@color2,.7));
       text-align: center;
       padding: 3rem;
@@ -102,7 +102,7 @@ body{
           }
         }
     }//testimonials
-      .flex(column,center,center);
+      .flex(column,center,center,none);
           h2{
             font-size: 5rem;
             @media screen and @mobile{
@@ -115,7 +115,7 @@ body{
             margin-bottom: 3.5rem;
           }
         }
-          .flex(row,none,none);
+          .flex(row,none,none,none);
           .img-circle{
             border-radius: 50%;
             @media screen and @tablet{
@@ -128,7 +128,7 @@ body{
             }
           }
           @media screen and @tablet{
-            .flex(column,none,none);
+            .flex(column,none,none,none);
           }
             p{
               .section(black,rgba(255,255,255, .5));
@@ -165,4 +165,19 @@ body{
   @media screen and @mobile{
     .anchors(white,@color2,2rem);
   }
+}
+
+.team{
+  margin-top: 10rem;
+  .flex(column,none,none,wrap);
+  .teammate{
+    .flex(row,none,center,no-wrap);
+    color: black;
+
+  }
+}
+.img-circle{
+  border-radius:50%;
+  height: 30rem;
+  margin: 0 0 4rem 20rem;
 }

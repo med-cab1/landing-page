@@ -185,6 +185,7 @@ img {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: none;
   margin: 0 auto;
   background-color: rgba(170, 170, 170, 0.75);
   color: black;
@@ -268,6 +269,7 @@ footer {
   flex-flow: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   color: black;
 }
 footer p {
@@ -314,6 +316,7 @@ body {
   flex-flow: row;
   justify-content: none;
   align-items: center;
+  flex-wrap: none;
   padding: 2rem;
 }
 .text-vision p {
@@ -338,6 +341,7 @@ body {
   flex-flow: row;
   justify-content: none;
   align-items: center;
+  flex-wrap: none;
 }
 @media screen and (max-width:800px) {
   .item_list {
@@ -345,6 +349,7 @@ body {
     flex-flow: row;
     justify-content: none;
     align-items: center;
+    flex-wrap: none;
   }
 }
 .item_list p {
@@ -376,12 +381,14 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
 }
 #testimonials-section .testimonials {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   color: black;
   background-color: rgba(85, 77, 99, 0.7);
   text-align: center;
@@ -445,6 +452,7 @@ body {
   flex-flow: row;
   justify-content: none;
   align-items: none;
+  flex-wrap: none;
 }
 @media screen and (max-width:800px) {
   #testimonials-section .testimonials-text div {
@@ -471,6 +479,7 @@ body {
     flex-flow: column;
     justify-content: none;
     align-items: none;
+    flex-wrap: none;
   }
 }
 #testimonials-section .testimonials-text p {
@@ -548,4 +557,25 @@ body {
     background-color: #554d63;
     color: white;
   }
+}
+.team {
+  margin-top: 10rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: wrap;
+}
+.team .teammate {
+  display: flex;
+  flex-flow: row;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: no-wrap;
+  color: black;
+}
+.img-circle {
+  border-radius: 50%;
+  height: 30rem;
+  margin: 0 0 4rem 20rem;
 }
