@@ -435,6 +435,7 @@ body {
 @media (max-width:800px) {
   #testimonials-section .testimonials-text .img-circle {
     height: 50%;
+    -webkit-height: 50%;
   }
 }
 @media (max-width:500px) {
