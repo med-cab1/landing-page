@@ -291,7 +291,7 @@ body {
   }
 }
 #vision img {
-  height: 50%;
+  height: 20rem;
 }
 .text-vision {
   color: white;
@@ -351,13 +351,13 @@ body {
   }
 }
 .item_list img {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 5rem;
+  max-height: 5rem;
 }
 @media screen and (max-width:800px) {
   .item_list img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 10rem;
+    max-height: 10rem;
   }
 }
 #testimonials-section {
