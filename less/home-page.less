@@ -172,12 +172,37 @@ body{
   .flex(column,none,none,wrap);
   .teammate{
     .flex(row,none,center,no-wrap);
+    @media screen and @mobile{
+      .flex(column,none,center,no-wrap);
+      margin-bottom: 3rem;
+    }
     color: black;
-
+    text-align: center;
+    h2{
+      font-size: 3.5rem;
+      @media screen and @tablet{
+        font-size: 2.5rem;
+        }
+      }
+    p{
+      font-size: 2.5rem;
+      @media screen and @tablet{
+        font-size: 1.5rem;
+      }
+    }
   }
-}
-.img-circle{
-  border-radius:50%;
-  height: 30rem;
-  margin: 0 0 4rem 20rem;
+  .img-circle{
+    border-radius: 50%;
+    height: 30rem;
+    margin: 0 5rem 4rem 20rem;
+    @media screen and @tablet{
+      .flex(column,none,center,no-wrap);
+      margin: 0 5rem 4rem 10rem;
+    }
+    @media screen and @mobile{
+      height: 20rem;
+      .flex(column,none,none,no-wrap);
+      margin: 0 0 2rem 0rem;
+    }
+  }
 }
