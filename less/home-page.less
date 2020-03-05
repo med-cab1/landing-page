@@ -83,7 +83,7 @@ body{
 
 #testimonials-section{
     .testimonials{
-      .flex(column,center,center,none);
+      .flex(column,center,center,none); //sets header and "testimonials" in a column and sets all the divs center.
       .section(black,rgba(@color2,.7));
       text-align: center;
       padding: 3rem;
@@ -91,58 +91,55 @@ body{
       margin: 2.5rem 0;
         a{
           color:black;
+            &:hover{
+              .anchors(white, @color1,2.5rem);
+            }
           @media screen and @tablet{
-            .anchors(white, @color1,2.5rem);
+            .anchors(white, @color1,2.5rem);//forces anchor to keep background color as green and white
           }
           @media @mobile{
             .anchors(white,@color1,2rem);
           }
-          &:hover{
-            .anchors(white, @color1,2.5rem);
-          }
         }
     }//testimonials
-      .flex(column,center,center,none);
-          h2{
-            font-size: 5rem;
-            @media screen and @mobile{
-              font-size: 3.5rem;
-            }
-          }
-        .testimonials-text{
-          div{
+    h2{
+      font-size: 5rem;
+      @media screen and @mobile{
+          font-size: 3.5rem;
+      }
+    }
+    .testimonials-text{
+      div{
+        @media screen and @tablet{
+          margin-bottom: 3.5rem;
+        }
+      }
+      .flex(row,none,none,none);
+        .img-circle{
+          border-radius: 50%;
           @media screen and @tablet{
-            margin-bottom: 3.5rem;
+            height:50%; //resizes photo to not overtake the screen
+          }
+          @media screen and @mobile{
+            display:none; //removes images and keeps text
           }
         }
-          .flex(row,none,none,none);
-          .img-circle{
-            border-radius: 50%;
+        @media screen and @tablet{
+          .flex(column,none,none,none); //sets text to column view so horizontal bar doesn'ts how
+        }
+        p{
+          .section(black,rgba(255,255,255, .5));
+            border-radius: .5rem;
+            padding: 1rem;
+            font-size: 1.8rem;
+            margin: 2.5rem 2.5rem;
             @media screen and @tablet{
-              height:50%;
-              -webkit-height: 50%;
-
+              margin: 2.5rem 0;
+              font-size: 2rem;
             }
             @media screen and @mobile{
-              display:none;
+              font-size: 2rem;
             }
-          }
-          @media screen and @tablet{
-            .flex(column,none,none,none);
-          }
-            p{
-              .section(black,rgba(255,255,255, .5));
-              border-radius: .5rem;
-              padding: 1rem;
-              font-size: 1.8rem;
-              margin: 2.5rem 2.5rem;
-              @media screen and @tablet{
-                margin: 2.5rem 0;
-                font-size: 2rem;
-              }
-              @media screen and @mobile{
-                font-size: 2rem;
-              }
             }//p
           } //testimonials-text
             .sign-up{
@@ -157,10 +154,10 @@ body{
   text-decoration: none;
   .anchors(black,none,3rem);
     &:hover{
-      .anchors(white, @color2,3rem);
+      .anchors(white, @color2,3rem);//adds hover affect to anchors
     }
   @media screen and @tablet{
-    .anchors(white,@color2,2.5rem);
+    .anchors(white,@color2,2.5rem);//sets the anchors to what the hovers would usually be
   }
   @media screen and @mobile{
     .anchors(white,@color2,2rem);
@@ -169,11 +166,11 @@ body{
 
 .team{
   margin-top: 10rem;
-  .flex(column,none,none,wrap);
+  .flex(column,none,none,wrap);//sets all pictures and texts section to a column
   .teammate{
-    .flex(row,none,center,no-wrap);
+    .flex(row,none,center,no-wrap); //sets texts to the right of the correpsonding photo
     @media screen and @mobile{
-      .flex(column,none,center,no-wrap);
+      .flex(column,none,center,no-wrap); //sets text under correpsonding photo to keep the horiz. scroll bar away.
       margin-bottom: 3rem;
     }
     color: black;
@@ -192,15 +189,15 @@ body{
     }
   }
   .img-circle{
-    border-radius: 50%;
+    border-radius: 50%; //sets photo as circle.
     height: 30rem;
-    margin: 0 5rem 4rem 20rem;
+    margin: 0 5rem 4rem 20rem; //use 20rem to keep consistent with homepage to see background image
     @media screen and @tablet{
       .flex(column,none,center,no-wrap);
-      margin: 0 5rem 4rem 10rem;
+      margin: 0 5rem 4rem 10rem; //keeps the horizontal bar from showing
     }
     @media screen and @mobile{
-      height: 20rem;
+      height: 20rem; //wanted to resize photo so it didnt over take the whole phone
       .flex(column,none,none,no-wrap);
       margin: 0 0 2rem 0rem;
     }

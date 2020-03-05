@@ -246,6 +246,7 @@ img {
     font-size: 1.5rem;
     border-radius: 5px;
     margin: 0.5rem;
+    padding: 0;
   }
   .main-nav .anchor:hover {
     background-color: none;
@@ -381,13 +382,6 @@ body {
     max-height: 10rem;
   }
 }
-#testimonials-section {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: none;
-}
 #testimonials-section .testimonials {
   display: flex;
   flex-flow: column;
@@ -403,6 +397,18 @@ body {
 }
 #testimonials-section .testimonials a {
   color: black;
+}
+#testimonials-section .testimonials a:hover {
+  display: inline-block;
+  background-color: #8cba80;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+#testimonials-section .testimonials a:hover:hover {
+  background-color: #8cba80;
+  color: white;
 }
 @media screen and (max-width:800px) {
   #testimonials-section .testimonials a {
@@ -432,18 +438,6 @@ body {
     color: white;
   }
 }
-#testimonials-section .testimonials a:hover {
-  display: inline-block;
-  background-color: #8cba80;
-  color: white;
-  padding: 0.5rem 1rem;
-  font-size: 2.5rem;
-  border-radius: 5px;
-}
-#testimonials-section .testimonials a:hover:hover {
-  background-color: #8cba80;
-  color: white;
-}
 #testimonials-section h2 {
   font-size: 5rem;
 }
@@ -470,7 +464,6 @@ body {
 @media screen and (max-width:800px) {
   #testimonials-section .testimonials-text .img-circle {
     height: 50%;
-    -webkit-height: 50%;
   }
 }
 @media screen and (max-width:500px) {
